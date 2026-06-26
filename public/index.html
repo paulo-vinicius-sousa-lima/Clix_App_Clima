@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clix - Clima da Cidade</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:,">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Previsão do Tempo</h2>
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Digite o nome da cidade...">
+            <button id="search-btn">Buscar</button>
+        </div>
+
+        <div id="weather-result" class="weather-result hidden">
+            <h3 id="city-name">Cidade, BR</h3>
+            <p id="temperature">--°C</p>
+            <p id="description">Ensolarado</p>
+            <p id="humidity">Umidade: --%</p>
+        </div>
+
+        <p id="error-message" class="error-message hidden">Cidade não encontrada. Tente novamente.</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
